@@ -68,7 +68,7 @@ class MenuHelper
 
         /* @var $manager \yii\rbac\BaseManager */
         $manager = Yii::$app->getAuthManager();
-        $menus = Menu::find()->asArray()->indexBy('id')->all(); 
+        $menus = Menu::find()->asArray()->indexBy('id')->all();
         $key = [__METHOD__, $userId, $manager->defaultRoles];
         $cache = $config->cache;
 
@@ -108,7 +108,7 @@ class MenuHelper
                 }
             }
             $assigned = [];
-            $query = Menu::find()->select(['id'])->asArray(); 
+            $query = Menu::find()->select(['id'])->asArray();
             if (count($filter2)) {
                 $assigned = $query->where(['route' => $filter2])->column();
             }
@@ -118,6 +118,7 @@ class MenuHelper
                     $assigned = array_merge($assigned, $query->params([':filter' => $filter])->column());
                 }
             }
+
             $assigned = static::requiredParent($assigned, $menus);
             if ($cache !== null) {
                 $cache->set($key, $assigned, $config->cacheDuration, new TagDependency([
@@ -209,6 +210,8 @@ class MenuHelper
                         $item['items'] = $menu['children'];
                     }
                 }
+//                var_dump($menu);exit;
+                $item['icon']=$menu['icon'];
                 $result[] = $item;
                 $order[] = $menu['order'];
             }

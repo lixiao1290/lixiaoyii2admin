@@ -36,6 +36,7 @@ $menus= Menu::getMenuSource();
         </div>
         <div class="col-sm-6">
             <?= $form->field($model, 'order')->input('number') ?>
+            <?= $form->field($model, 'icon')->input('') ?>
 
             <?= $form->field($model, 'data')->textarea(['rows' => 4]) ?>
         </div>

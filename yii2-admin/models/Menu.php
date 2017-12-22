@@ -13,6 +13,7 @@ use yii\db\Query;
  * @property string $name Menu name
  * @property integer $parent Menu parent
  * @property string $route Route for this menu
+ * @property string $icon Route for this menu
  * @property integer $order Menu order
  * @property string $data Extra information for this menu
  *
@@ -53,6 +54,7 @@ class Menu extends \yii\db\ActiveRecord
     {
         return [
             [['name'], 'required'],
+            [['icon'], 'string'],
             [['parent_name'], 'in',
                 'range' => static::find()->select(['name'])->column(),
                 'message' => '菜单 "{value}" 找不到.'],
@@ -99,6 +101,7 @@ class Menu extends \yii\db\ActiveRecord
             'route' => Yii::t('rbac-admin', 'Route'),
             'order' => Yii::t('rbac-admin', 'Order'),
             'data' => Yii::t('rbac-admin', 'Data'),
+            'icon' => Yii::t('rbac-admin', 'icon'),
         ];
     }
 
