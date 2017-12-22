@@ -5,8 +5,8 @@
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "",
-        "source": ""
+        "issues": "https://github.com/lixiao1290/yii_admin_l",
+        "source": "https://github.com/lixiao1290/yii_admin_l"
     },
     "authors": [
         {
