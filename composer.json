@@ -1,0 +1,37 @@
+{
+    "name": "lixiaocode/yii2admin",
+    "description": "yii2 rbac",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lixiao",
+            "email": "lixiao.god@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "~2.0"
+    },
+    "suggest": {
+        "yiisoft/yii2-bootstrap": "Used when using layout 'left-menu', 'right-menu' or 'top-menu'"
+    },
+    "autoload": {
+        "psr-4": {
+            "lixiaocode\\admin\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-1.0.master": "1.0.x-dev",
+            "dev-master": "2.x-dev"
+        },
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
