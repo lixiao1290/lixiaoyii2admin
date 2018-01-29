@@ -9,6 +9,6 @@ return array(
     'yii\\composer\\' => array($vendorDir . '/yiisoft/yii2-composer'),
     'yii\\codeception\\' => array($vendorDir . '/yiisoft/yii2-codeception'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
-    'lixiao\\admin\\' => array($baseDir . '/'),
+    'lixiaocode\\admin\\' => array($baseDir . '/'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
 );

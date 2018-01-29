@@ -19,7 +19,7 @@ class ComposerStaticInit5c08f9e828c281d6324ad8ed185d5464
         ),
         'l' => 
         array (
-            'lixiao\\admin\\' => 13,
+            'lixiaocode\\admin\\' => 17,
         ),
         'c' => 
         array (
@@ -40,7 +40,7 @@ class ComposerStaticInit5c08f9e828c281d6324ad8ed185d5464
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
-        'lixiao\\admin\\' => 
+        'lixiaocode\\admin\\' => 
         array (
             0 => __DIR__ . '/../..' . '/',
         ),
